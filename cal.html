@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container rounded-5 p-3 mt-5 bg-dark">
+        <table>
+            <tr>
+                <td colspan="4"><input class="rounded-pill pe-3 text-end h4" type="text" id="screen"></td>
+            </tr>
+            <tr>
+                <td><button class="but1 clear btn btn-sm rounded-circle bg-dark-subtle text-dark" onclick="clr('AC')" >AC</button></td>
+                <td><button class="but1 btn btn-sm bg-dark-subtle rounded-circle text-dark" onclick="display('-')">+/-</button></td>
+                <td><button class="but1 btn btn-sm bg-dark-subtle rounded-circle text-dark" onclick="display('%')">%</button></td>
+                <td><button class="opt btn btn-sm btn-warning rounded-circle text-light" onclick="display('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('7')">7</button></td>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('8')">8</button></td>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('9')">9</button></td>
+                <td><button class="opt btn btn-sm btn-warning rounded-circle text-light" onclick="display('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('4')">4</button></td>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('5')">5</button></td>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('6')">6</button></td>
+                <td><button class="opt btn btn-sm btn-warning rounded-circle text-light" onclick="display('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('1')">1</button></td>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('2')">2</button></td>
+                <td><button class="bg-secondary text-light rounded-circle" onclick="display('3')">3</button></td>
+                <td><button class="opt btn btn-sm btn-warning rounded-circle text-light" onclick="display('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="btn1 bg-secondary text-light rounded-pill" onclick="display('0')">0</button></td>
+                <td><button class="bg-secondary rounded-circle text-light" onclick="display('.')">.</button></td>
+                <td><button class="opt btn btn-sm btn-warning rounded-circle text-light" onclick="sol()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+<script src="cal.js"></script>
+</body>
+</html>
